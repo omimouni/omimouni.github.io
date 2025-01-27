@@ -14,14 +14,15 @@ export const metadata = {
   openGraph: {
     title: 'Oumar Mimouni | Full Stack Software Engineer',
     description: 'full stack software engineer',
-  }
+  },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'),
 }
 
 export default function Home() {
   return (
     <>
       <div className="fixed opacity-30 md:opacity-100 h-full w-full md:w-1/3 inset-0 overflow-hidden">
-      <div className="h-full w-full md:w-1/2 right-0 absolute z-10 bg-gradient-to-l from-white to-transparent"></div>
+        <div className="h-full w-full md:w-1/2 right-0 absolute z-10 bg-gradient-to-l from-white to-transparent"></div>
         <Canvas />
       </div>
       <div className="overflow-hidden pointer-events-none">
@@ -73,6 +74,7 @@ export default function Home() {
 
                   <div className="flex flex-wrap gap-2 mt-2">
                     <SkillIcon icon="tailwindcss" />
+                    <SkillIcon icon="threejs" slug="threejs-original" />
                     <SkillIcon icon="laravel" />
                     <SkillIcon icon="nextjs" />
                     <SkillIcon icon="react" />

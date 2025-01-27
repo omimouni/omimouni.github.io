@@ -1,4 +1,3 @@
-
 import path from 'path';
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -11,7 +10,8 @@ export const metadata = {
     openGraph: {
         title: 'Blogs | Oumar Mimouni | Full Stack Software Engineer',
         description: 'full stack software engineer',
-    }
+    },
+    metadataBase: new URL(process.env.NEXT_PUBLIC_URL || 'http://localhost:3000'),
 }
 
 export default function Blogs() {
@@ -35,7 +35,7 @@ export default function Blogs() {
 
             {blogs.map((blog) => (
                 <div key={blog.slug} className='bg-gray-100 p-4 rounded-md mt-10'>
-                    <Link href={`/blogs/${blog.slug}`}>
+                    <Link href={`/blogs/${blog.slug}`} legacyBehavior={false}>
                         <h2 className='text-xl font-black'>{blog.title}</h2>
                         <p className='text-xs mt-2'>{String(blog.content).replace(/<[^>]*>/g, '').substring(0, 200)}...</p>
                     </Link>
