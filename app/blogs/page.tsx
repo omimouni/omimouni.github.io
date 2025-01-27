@@ -34,9 +34,9 @@ export default function Blogs() {
             <h1 className="text-3xl font-black">Blogs</h1>
 
             {blogs.map((blog) => (
-                <div key={blog.slug} className='bg-gray-100 p-4 rounded-md mt-10'>
+                <div key={blog.slug} className='bg-gray-50 p-4 rounded-md mt-10'>
                     <Link href={`/blogs/${blog.slug}`} legacyBehavior={false}>
-                        <h2 className='text-xl font-black'>{blog.title}</h2>
+                        <h2 className='text-xl font-semibold'>{blog.title}</h2>
                         <p className='text-xs mt-2'>{String(blog.content).replace(/<[^>]*>/g, '').substring(0, 200)}...</p>
                     </Link>
                 </div>

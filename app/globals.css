@@ -8,5 +8,5 @@ html {
 }
 
 .wrapper {
-  @apply container px-4 w-full md:w-5/12;
+  @apply container px-4 w-full md:w-5/12 max-w-screen-md;
 }
