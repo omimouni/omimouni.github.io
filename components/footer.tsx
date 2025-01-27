@@ -3,7 +3,7 @@ import EmailBtn from "./email-btn";
 import { faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
-    return <div className="fixed bottom-0 left-0 w-full py-2 bg-[#e74c3c] text-white">
+    return <div className="fixed z-10 bottom-0 left-0 w-full py-2 bg-[#e74c3c] text-white">
         <div className="wrapper">
             <div className="flex justify-between items-center">
                 <EmailBtn />
