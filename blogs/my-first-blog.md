@@ -1,24 +1,105 @@
 ---
 title: My First Blog
 slug: my-first-blog
+date: 2025-01-27
 ---
 
-<h1>Welcome to My Blog</h1>
-<p>This is my first post, where I say hello to the world. It's just the beginning of many thoughts, ideas, and stories that I hope to share!</p>
+# Markdown Syntax Guide
 
-<h2>Why I Started This Blog</h2>
-<p>For years, I've wanted a place to express my thoughts, document my journey, and share insights with the world. Whether it's personal experiences, hobbies, or lessons learned, this blog is a way for me to connect with others.</p>
+Welcome! This post demonstrates all the Markdown features available.
 
-<h2>What to Expect</h2>
-<p>Here are a few things you can expect to see on this blog:</p>
-<ul>
-  <li>Personal stories and reflections</li>
-  <li>Tips and tricks for productivity</li>
-  <li>Book and movie recommendations</li>
-  <li>Random musings about life and technology</li>
-</ul>
+## Text Formatting
 
-<h2>Join Me on This Journey</h2>
-<p>If you’ve stumbled upon this post, thank you for being here! I’d love for you to join me as I explore, learn, and grow. Feel free to leave comments, share your thoughts, or suggest topics you’d like to see me write about.</p>
+**Bold text** and *italic text* are basic formatting options.
+You can also do ***bold and italic*** together.
+~~Strikethrough~~ is also possible.
 
-<p>Let’s make this journey together!</p>
+## Lists
+
+### Unordered List
+* Item 1
+* Item 2
+  * Nested item 2.1
+  * Nested item 2.2
+* Item 3
+
+### Ordered List
+1. First item
+2. Second item
+3. Third item
+   1. Nested item
+   2. Another nested item
+
+## Code Blocks
+
+Inline code: `const greeting = "Hello World!";`
+
+```javascript
+function sayHello() {
+console.log("Hello, World!");
+```
+
+
+## Blockquotes
+
+> This is a blockquote
+> It can span multiple lines
+>> And can be nested
+
+## Links and Images
+
+[Visit my GitHub](https://github.com/omimouni)
+
+![Alt text](https://picsum.photos/200/300)
+
+## Tables
+
+| Header 1 | Header 2 |
+|----------|----------|
+| Cell 1   | Cell 2   |
+| Cell 3   | Cell 4   |
+
+## Task Lists
+
+- [x] Write the blog post
+- [ ] Add more examples
+- [ ] Review and publish
+
+## Horizontal Rule
+
+---
+
+## HTML Support
+
+<div style="color: blue;">
+  This is colored text using HTML
+</div>
+
+<details>
+  <summary>Click to expand!</summary>
+  Hidden content here
+</details>
+
+## Math (if supported)
+
+Inline equation: $E = mc^2$
+
+Block equation:
+$$
+\frac{n!}{k!(n-k)!} = \binom{n}{k}
+$$
+
+
+## Footnotes
+
+Here's a sentence with a footnote[^1].
+
+[^1]: This is the footnote content.
+
+## Emoji Support
+
+:smile: :rocket: :books:
+
+---
+
+That's all for now! 🎉
