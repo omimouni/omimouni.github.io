@@ -36,6 +36,7 @@ export default function TransitionLink({ children, href, ...props }: { children:
                 ease: "power2.inOut",
             });
         } catch (error) {
+            console.log(error);
             // If anything fails, ensure content is visible
             gsap.set("#content", { opacity: 1 });
         }

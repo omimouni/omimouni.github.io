@@ -1,11 +1,3 @@
-import { sanityClient, UrlFor } from "@/lib/sanity";
-import { type SanityDocument } from "next-sanity";
-import Image from "next/image";
-import TransitionLink from "@/components/transition-link";
-
-
-
-
 export default async function Works() {
 
 
