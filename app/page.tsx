@@ -9,12 +9,12 @@ export default function Home() {
 
       <div className="flex items-center py-32 md:py-32 py-20">
         <div className="relative w-full">
-          <h4 className="text-9xl md:text-9xl text-5xl relative z-30 flex flex-col leading-none uppercase font-black">
+          <h4 className="text-6xl md:text-9xl relative z-30 flex flex-col leading-none uppercase font-black">
             <span className="">Full Stack</span>
             <span className="">Interactive</span>
             <span className="">Developer</span>
           </h4>
-          <div className="absolute right-0 w-1/2 md:w-1/2 w-full -z-10 top-1/2 -translate-y-1/2 aspect-square">
+          <div className="absolute right-0 md:w-1/2 w-full -z-10 top-1/2 -translate-y-1/2 aspect-square">
             <ThreeJSCanvas />
           </div>
         </div>
