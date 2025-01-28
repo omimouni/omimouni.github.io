@@ -2,6 +2,7 @@ import "./globals.css";
 import { Nunito } from "next/font/google";
 import LenisProvider from "@/components/lenis-provider";
 import NoiseBackground from "@/components/noise-background";
+import Navbar from "@/components/navbar";
 
 
 const font = Nunito({
@@ -17,13 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased`}>
+      <NoiseBackground />
+
         <LenisProvider>
-          {/* <Navbar /> */}
+          <Navbar />
           <div id="content">
             <div className="">{children}</div>
           </div>
         </LenisProvider>
-        <NoiseBackground />
       </body>
     </html>
   );

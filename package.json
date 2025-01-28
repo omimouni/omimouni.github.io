@@ -11,10 +11,13 @@
   "dependencies": {
     "@react-three/drei": "^10.0.0-rc.1",
     "@react-three/fiber": "^9.0.0-beta.1",
+    "@sanity/asset-utils": "^2.2.1",
+    "@sanity/image-url": "^1.1.0",
     "@types/three": "^0.172.0",
     "gsap": "^3.12.7",
     "lenis": "^1.1.20",
     "next": "15.1.6",
+    "next-sanity": "^9.8.44",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "three": "^0.172.0"

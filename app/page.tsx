@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="wrapper text-gray-900">
 
-      <div className="flex items-center py-32 md:py-32 py-20">
+      <div className="flex items-center md:py-32 py-20">
         <div className="relative w-full">
           <h4 className="text-6xl md:text-9xl relative z-30 flex flex-col leading-none uppercase font-black">
             <span className="">Full Stack</span>
