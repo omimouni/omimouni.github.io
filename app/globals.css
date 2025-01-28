@@ -2,20 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  font-size: 16px;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.wrapper {
+  @apply container max-w-screen-xl;
+}
+
+.noise-background{ 
+  @apply fixed inset-0 pointer-events-none;
+  background-image: url('/noise.png');
+  background-size: 50%;
+  background-repeat: repeat;
+  height: 600%;
+  width: 600%;
+  top: -300%;
+  left: -150%;
+  background-size: 200px;
+  background-repeat: repeat;
+  opacity: 0.4;
+  animation: move-noise 7s steps(10) infinite;
+}
+
+@keyframes move-noise {
+  0%,to {
+      transform: translate(0)
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  10% {
+      transform: translate(-5%,-10%)
+  }
+
+  20% {
+      transform: translate(-15%,5%)
+  }
+
+  30% {
+      transform: translate(7%,-25%)
+  }
+
+  40% {
+      transform: translate(-5%,25%)
+  }
+
+  50% {
+      transform: translate(-15%,10%)
+  }
+
+  60% {
+      transform: translate(15%)
+  }
+
+  70% {
+      transform: translateY(15%)
+  }
+
+  80% {
+      transform: translate(3%,35%)
+  }
+
+  90% {
+      transform: translate(-10%,10%)
+  }
 }
