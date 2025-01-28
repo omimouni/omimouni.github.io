@@ -9,7 +9,7 @@ export default function Home() {
 
       <div className="flex items-center md:py-32 py-20">
         <div className="relative w-full">
-          <h4 className="text-6xl md:text-9xl relative z-30 flex flex-col leading-none uppercase font-black">
+          <h4 className="text-5xl md:text-9xl relative z-30 flex flex-col leading-none uppercase font-black">
             <span className="">Full Stack</span>
             <span className="">Interactive</span>
             <span className="">Developer</span>

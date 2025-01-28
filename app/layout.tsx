@@ -22,7 +22,7 @@ export default function RootLayout({
 
         <LenisProvider>
           <Navbar />
-          <div id="content">
+          <div id="content" className="pt-20 md:pt-0">
             <div className="">{children}</div>
           </div>
         </LenisProvider>
